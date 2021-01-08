@@ -1,0 +1,147 @@
+:root {
+
+     --primary-color: #2fad79;
+     --text-color:#12263a;
+    --bg-color:pink;
+    }
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    align-items: center;
+
+}
+
+.logo{
+    object-fit: contain;
+    height: 70px;
+}
+
+.page > a {
+    margin: 0 1em;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.page > a:hover{
+    color:var(--primary-color);
+}
+
+.hero{
+    display: flex;
+    padding: 0 4rem;
+}
+
+.left{
+    width: 50%;
+    height: calc(100vh - (32px + 72px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 400;
+ 
+}
+
+.heading > span {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+.star{
+    width: 120px;
+padding: 6px 16px;
+background-color: var(--primary-color);
+border: none;
+font-size: 17px;
+color: white;
+border-radius: 50px;
+}
+
+
+
+.left >p{
+    padding: 1rem 0;
+}
+.coffee{
+    object-fit: contain;
+    height: 500px;
+}
+
+.heading >span:hover{
+    color: darkmagenta;
+}
+.icons{
+    background-color:var(--bg-color);
+    position: absolute;
+    top:50%;
+    right: 0;
+    margin-top: -150px;
+    padding: 30px;
+
+}
+.icon{
+    font-size: 32px;
+    margin: 18px 0;
+    width: 15px;
+    height: 30px;
+
+}
+.icon :hover{
+    font-size: 50px;
+}
+
+
+@media (max-width:500px) {
+.coffee{
+    height: 300px;
+}
+.header{
+    padding:1rem;
+    flex-direction: column;
+}
+.left{
+    width: 100%;
+    height: max-content;
+    
+
+}
+.hero{
+    flex-direction: column-reverse;
+    padding: 1rem;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+}
+.star{
+  margin: auto;
+    font-size: 17px;
+    background-color:var(--primary-color);
+}
+.left > p{
+    text-align: center;
+}
+.star:hover{
+    background-color:var(--bg-color);
+}
+.icons{
+    display: none;
+}
+}
